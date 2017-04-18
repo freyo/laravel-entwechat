@@ -1,0 +1,21 @@
+{
+    "name": "freyo/laravel-entwechat",
+    "description": "微信企业号 SDK for Laravel",
+    "keywords": ["wechat", "weixin", "laravel", "sdk"],
+    "require": {
+        "freyo/entwechat": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Freyo\\LaravelEntWechat\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "minimum-stability" : "dev",
+    "authors": [
+        {
+            "name": "freyo",
+            "email": "freyhsiao@gmail.com"
+        }
+    ]
+}
