@@ -9,7 +9,7 @@
 1. 安装包文件
 
   ```shell
-  composer require "freyo/laravel-entwechat:dev-master"
+  composer require "freyo/laravel-entwechat"
   ```
   
   > 使用前请禁用 laravel-debugbar
