@@ -3,7 +3,7 @@
     "description": "微信企业号 SDK for Laravel",
     "keywords": ["wechat", "weixin", "laravel", "sdk"],
     "require": {
-        "freyo/entwechat": "dev-master"
+        "freyo/entwechat": "^1.0"
     },
     "autoload": {
         "psr-4": {
