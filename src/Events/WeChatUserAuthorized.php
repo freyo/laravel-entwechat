@@ -2,8 +2,8 @@
 
 namespace Freyo\LaravelEntWechat\Events;
 
-use Illuminate\Queue\SerializesModels;
 use EntWeChat\Support\Collection;
+use Illuminate\Queue\SerializesModels;
 
 class WeChatUserAuthorized
 {
@@ -16,7 +16,7 @@ class WeChatUserAuthorized
      * Create a new event instance.
      *
      * @param \EntWeChat\Support\Collection $user
-     * @param bool                     $isNewSession
+     * @param bool                          $isNewSession
      *
      * @return void
      */

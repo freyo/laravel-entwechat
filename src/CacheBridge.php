@@ -52,7 +52,7 @@ class CacheBridge implements CacheInterface
         if ($lifeTime == 0) {
             return Cache::forever($id, $data);
         }
-        
+
         return Cache::put($id, $data, $lifeTime / 60);
     }
 
