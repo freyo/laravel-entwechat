@@ -5,8 +5,8 @@ namespace Freyo\LaravelEntWechat\Middleware;
 use Closure;
 use EntWeChat\Foundation\Application;
 use Event;
-use Log;
 use Freyo\LaravelEntWechat\Events\WeChatUserAuthorized;
+use Log;
 
 /**
  * Class OAuthAuthenticate.
@@ -96,19 +96,20 @@ class OAuthAuthenticate
     /**
      * Is different scopes.
      *
-     * @param  array $scopes
+     * @param array $scopes
      *
      * @return bool
      */
     protected function needReauth($scopes)
     {
-        return session('entwechat.oauth_user.original.scope') == 'snsapi_base' && in_array("snsapi_userinfo", $scopes);
+        return session('entwechat.oauth_user.original.scope') == 'snsapi_base' && in_array('snsapi_userinfo', $scopes);
     }
 
     /**
      * Detect current user agent type.
      *
      * @param \Illuminate\Http\Request $request
+     *
      * @return bool
      */
     protected function isWeChatBrowser($request)

@@ -19,8 +19,8 @@ return [
 
     //单账号
     'corp_id' => env('WECHAT_APPID', 'your-app-id'),         // AppID
-    'secret' => env('WECHAT_SECRET', 'your-app-secret'),     // AppSecret
-    'token' => env('WECHAT_TOKEN', 'your-token'),          // Token
+    'secret'  => env('WECHAT_SECRET', 'your-app-secret'),     // AppSecret
+    'token'   => env('WECHAT_TOKEN', 'your-token'),          // Token
     'aes_key' => env('WECHAT_AES_KEY', ''),                    // EncodingAESKey
     /*
      * OAuth 配置
@@ -31,16 +31,16 @@ return [
      */
     'oauth' => [
         'only_wechat_browser' => false,
-        'scopes' => array_map('trim', explode(',', env('WECHAT_OAUTH_SCOPES', 'snsapi_base'))),
-        'callback' => env('WECHAT_OAUTH_CALLBACK', '/examples/oauth_callback.php'),
+        'scopes'              => array_map('trim', explode(',', env('WECHAT_OAUTH_SCOPES', 'snsapi_base'))),
+        'callback'            => env('WECHAT_OAUTH_CALLBACK', '/examples/oauth_callback.php'),
     ],
 
     //多账号
     'account' => [
         'default' => [
             'corp_id' => env('WECHAT_APPID', 'your-app-id'),         // AppID
-            'secret' => env('WECHAT_SECRET', 'your-app-secret'),     // AppSecret
-            'token' => env('WECHAT_TOKEN', 'your-token'),          // Token
+            'secret'  => env('WECHAT_SECRET', 'your-app-secret'),     // AppSecret
+            'token'   => env('WECHAT_TOKEN', 'your-token'),          // Token
             'aes_key' => env('WECHAT_AES_KEY', ''),                    // EncodingAESKey
             /*
              * OAuth 配置
@@ -51,8 +51,8 @@ return [
              */
             'oauth' => [
                 'only_wechat_browser' => false,
-                'scopes' => array_map('trim', explode(',', env('WECHAT_OAUTH_SCOPES', 'snsapi_base'))),
-                'callback' => env('WECHAT_OAUTH_CALLBACK', '/examples/oauth_callback.php'),
+                'scopes'              => array_map('trim', explode(',', env('WECHAT_OAUTH_SCOPES', 'snsapi_base'))),
+                'callback'            => env('WECHAT_OAUTH_CALLBACK', '/examples/oauth_callback.php'),
             ],
         ],
         // ...
@@ -67,7 +67,7 @@ return [
      */
     'log' => [
         'level' => env('WECHAT_LOG_LEVEL', 'debug'),
-        'file' => env('WECHAT_LOG_FILE', storage_path('logs/wechat.log')),
+        'file'  => env('WECHAT_LOG_FILE', storage_path('logs/wechat.log')),
     ],
 
     /*
