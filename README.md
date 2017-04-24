@@ -1,5 +1,12 @@
 # laravel-entwechat
 
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/travis/freyo/laravel-entwechat/master.svg?style=flat-square)](https://travis-ci.org/freyo/laravel-entwechat)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/freyo/laravel-entwechat.svg?style=flat-square)](https://scrutinizer-ci.com/g/freyo/laravel-entwechat)
+[![Quality Score](https://img.shields.io/scrutinizer/g/freyo/laravel-entwechat.svg?style=flat-square)](https://scrutinizer-ci.com/g/freyo/laravel-entwechat)
+[![Packagist Version](https://img.shields.io/packagist/v/freyo/laravel-entwechat.svg?style=flat-square)](https://packagist.org/packages/freyo/laravel-entwechat)
+[![Total Downloads](https://img.shields.io/packagist/dt/freyo/laravel-entwechat.svg?style=flat-square)](https://packagist.org/packages/freyo/laravel-entwechat)
+
 微信 SDK for Laravel 5 / Lumen， 基于 [freyo/entwechat](https://github.com/freyo/entwechat)
 
 本项目仅适用于一个固定企业号，支持一个或多个权限组
@@ -59,7 +66,6 @@ WECHAT_PAYMENT_KEY_PATH
 WECHAT_PAYMENT_DEVICE_INFO
 WECHAT_PAYMENT_SUB_APP_ID
 WECHAT_PAYMENT_SUB_MERCHANT_ID
-WECHAT_ENABLE_MOCK
 ```
 
 3. 如果你习惯使用 `config/wechat.php` 来配置的话，将 `vendor/freyo/laravel-entwechat/src/config.php` 拷贝到`app/config`目录下，并将文件名改成`entwechat.php`。
